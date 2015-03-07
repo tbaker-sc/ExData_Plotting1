@@ -36,7 +36,7 @@ plot4 <- function () {
 	with(sub, {
 		#Plot #1
 		plot(strptime(paste(Date, Time), format = "%d/%m/%Y %H:%M:%S"), Global_active_power, 
-		type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
+		type = "l", ylab = "Global Active Power", xlab = "")
 		
 		#Plot #2
 		plot(strptime(paste(Date, Time), format = "%d/%m/%Y %H:%M:%S"), Sub_metering_1, 
