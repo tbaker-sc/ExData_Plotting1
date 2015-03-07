@@ -1,3 +1,11 @@
+#Notes added by submitter
+
+All 4 R scripts first try to find the data file locally but, if it doesn't exist, will download & unzip the raw data.  The only error condition exit from each function is if the download/unzip doesn't produce the expected file.  
+
+Specifics for each function can be found in the comments of each R script
+
+Each R script will produce a .png output file in the same directory as the R scripts exist.  
+
 ## Introduction
 
 This assignment uses data from
