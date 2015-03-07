@@ -9,7 +9,7 @@ plot1 <- function () {
 		download.file(fileUrl, destfile = "exdata-data-household_power_consumption.zip", method = "curl")
 		unzip("exdata-data-household_power_consumption.zip")
 		if (!file.exists("household_power_consumption.txt")) {
-			print("ERROR: Cannot open file.")
+			print("ERROR: Cannot open file. Please check for an internet connection & that a zip utility is installed.")
 			return()
 		} 
 	}
