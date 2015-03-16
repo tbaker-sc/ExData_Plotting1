@@ -19,7 +19,7 @@ plot1 <- function () {
 	full_data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings="?", as.is=TRUE)
 	
 	#Subset the full_data data frame so we're only dealng with the 2 dates needed for this project
-	sub_data <- full_data[(full_data$Date == "2/2/2007" | full_data$Date == "1/2/2007"),]
+	sub <- full_data[(full_data$Date == "2/2/2007" | full_data$Date == "1/2/2007"),]
 	
 	#Open the png graphics device that we'll be writing to
 	png("plot1.png")
